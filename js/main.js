@@ -71,7 +71,7 @@ function initScrollAnimations() {
   });
 
   // Add stagger delays to grid children
-  document.querySelectorAll('.features-grid .feature-card, .goals-grid .goal-card').forEach((card, index) => {
+  document.querySelectorAll('.features-grid .feature-card, .goals-grid .goal-card, .meals-grid .meal-card, .challenges-grid .challenge-card').forEach((card, index) => {
     card.dataset.delay = index * 100;
   });
 
