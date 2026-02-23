@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>Comboa - Seu Companheiro Inteligente para Refeições Fit</title>
+  <meta name="description" content="Comboa - Receitas personalizadas, IA que monta seu plano alimentar e desafios semanais. Seu companheiro inteligente para refeições fit.">
+  <meta name="keywords" content="comboa, refeições fit, receitas saudáveis, dieta, IA, plano alimentar, nutrição, comida saudável, smartplan">
+  <meta name="author" content="GrayCat Corp">
+  <meta name="theme-color" content="#B52D13">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Comboa - Refeições Fit com Inteligência Artificial">
+  <meta property="og:description" content="Seu companheiro inteligente para refeições fit. Receitas personalizadas, planejamento com IA e desafios semanais.">
+  <meta property="og:image" content="assets/images/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Comboa - Refeições Fit com IA">
+  <meta name="twitter:description" content="Seu companheiro inteligente para refeições fit.">
+  <meta name="twitter:image" content="assets/images/favicon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Comboa",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "description": "Seu companheiro inteligente para refeições fit com IA. Receitas personalizadas, desafios semanais e planejamento alimentar."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ====== HEADER / NAVBAR ====== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="header-logo">
+        <img src="assets/images/comboa_logo.png" alt="Comboa Logo">
+        <span>Comboa</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#comboaia">ComboaIA</a>
+        <a href="#precos">Preços</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download" class="btn btn-primary nav-cta">Baixar App</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge fade-in">
+          &#x1F525; App #1 em refeições fit
+        </div>
+        <h1 class="hero-title fade-in">
+          Seu companheiro inteligente para <span>refeições fit</span>
+        </h1>
+        <p class="hero-description fade-in">
+          Receitas personalizadas, desafios semanais e uma IA que monta seu plano alimentar.
+          Tudo no Comboa.
+        </p>
+        <div class="hero-buttons fade-in">
+          <a href="#download" class="btn btn-accent">Comece Grátis</a>
+          <a href="#funcionalidades" class="btn btn-outline">Saiba Mais</a>
+        </div>
+        <div class="hero-stores fade-in" id="download">
+          <a href="https://apps.apple.com/br/app/comboa/id6751010781" target="_blank" rel="noopener noreferrer" class="store-badge" aria-label="Baixar na App Store">
+            <svg viewBox="0 0 120 40" width="135" height="45"><rect width="120" height="40" rx="5" fill="#000"/><text x="60" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="sans-serif">Download on the</text><text x="60" y="28" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold" font-family="sans-serif">App Store</text></svg>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=br.com.graycat.flutter_g_comboa" target="_blank" rel="noopener noreferrer" class="store-badge" aria-label="Disponível no Google Play">
+            <svg viewBox="0 0 135 40" width="152" height="45"><rect width="135" height="40" rx="5" fill="#000"/><text x="67" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="sans-serif">GET IT ON</text><text x="67" y="28" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold" font-family="sans-serif">Google Play</text></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in">
+        <div class="hero-logo-container">
+          <div class="hero-logo-ring"></div>
+          <img src="assets/images/comboa_logo_home.png" alt="Comboa App">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FUNCIONALIDADES ====== -->
+  <section class="features section" id="funcionalidades">
+    <div class="container">
+      <h2 class="section-title fade-in">Tudo que você precisa em um só lugar</h2>
+      <p class="section-subtitle fade-in">
+        Funcionalidades pensadas para transformar sua alimentação de forma simples e divertida.
+      </p>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">&#x1F372;</div>
+          <h3>Receitas Personalizadas</h3>
+          <p>Encontre receitas que combinam com seu estilo de vida e preferências alimentares.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">&#x1F3AF;</div>
+          <h3>Desafios Semanais</h3>
+          <p>Supere desafios alimentares e estimule a sua melhor versão a cada semana.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">&#x1F55B;</div>
+          <h3>6 Refeições Diárias</h3>
+          <p>Café da manhã, lanches, almoço, jantar e ceia — tudo organizado e balanceado para o seu dia.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">&#x1F33F;</div>
+          <h3>Restrições Alimentares</h3>
+          <p>Sem lactose, sem glúten, vegano ou vegetariano. Respeita suas escolhas e necessidades.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">&#x1F3C6;</div>
+          <h3>40+ Conquistas</h3>
+          <p>Desbloqueie conquistas em 6 categorias diferentes e acompanhe sua evolução.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">&#x1F91D;</div>
+          <h3>Compartilhe com Amigos</h3>
+          <p>Envie seus SmartPlans e receitas favoritas para amigos e familiares.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== COMBOAIA ====== -->
+  <section class="comboaia section" id="comboaia">
+    <div class="container">
+      <div class="comboaia-intro">
+        <div class="comboaia-tag fade-in">&#x1F9E0; Inteligência Artificial</div>
+        <h2 class="section-title fade-in">ComboaIA: Sua nutricionista de bolso</h2>
+        <p class="section-subtitle fade-in">
+          Nossa IA cria SmartPlans personalizados com base nos seus objetivos,
+          restrições e preferências. Até 5 planos por dia no Premium.
+        </p>
+      </div>
+
+      <div class="goals-grid">
+        <!-- Goal 1 -->
+        <div class="goal-card fade-in">
+          <span class="goal-icon">&#x2696;&#xFE0F;</span>
+          <h3>Perda de Peso</h3>
+          <p>Planos low-calorie e high-protein para emagrecer com saúde.</p>
+          <div class="goal-tags">
+            <span>Low-calorie</span>
+            <span>High-protein</span>
+            <span>High-fiber</span>
+          </div>
+        </div>
+
+        <!-- Goal 2 -->
+        <div class="goal-card fade-in">
+          <span class="goal-icon">&#x1F4AA;</span>
+          <h3>Ganho de Massa</h3>
+          <p>Refeições ricas em proteína e energia para ganhar massa muscular.</p>
+          <div class="goal-tags">
+            <span>High-protein</span>
+            <span>High-energy</span>
+            <span>Mass-gain</span>
+          </div>
+        </div>
+
+        <!-- Goal 3 -->
+        <div class="goal-card fade-in">
+          <span class="goal-icon">&#x26A1;</span>
+          <h3>Mais Disposição</h3>
+          <p>Alimentos energéticos e de baixo índice glicêmico para mais energia no dia.</p>
+          <div class="goal-tags">
+            <span>High-energy</span>
+            <span>Low-GI</span>
+            <span>Antioxidant</span>
+          </div>
+        </div>
+
+        <!-- Goal 4 -->
+        <div class="goal-card fade-in">
+          <span class="goal-icon">&#x1F49A;</span>
+          <h3>Saúde Geral</h3>
+          <p>Foco em fibras, vitaminas e antioxidantes para uma vida mais saudável.</p>
+          <div class="goal-tags">
+            <span>High-fiber</span>
+            <span>Vitamin-rich</span>
+            <span>Antioxidant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PREÇOS ====== -->
+  <section class="pricing section" id="precos">
+    <div class="container">
+      <h2 class="section-title fade-in">Escolha seu plano</h2>
+      <p class="section-subtitle fade-in">
+        Comece grátis e evolua quando quiser. Sem compromisso.
+      </p>
+
+      <div class="pricing-grid">
+        <!-- Free Plan -->
+        <div class="pricing-card fade-in">
+          <div class="pricing-header">
+            <h3>Grátis</h3>
+            <div class="pricing-price">R$ 0 <span>/ mês</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>Acesso básico a receitas</li>
+            <li>ComboaIA limitada</li>
+            <li>Desafios básicos</li>
+            <li>Compartilhamento limitado</li>
+            <li class="disabled">Com anúncios</li>
+            <li class="disabled">SmartPlans ilimitados</li>
+            <li class="disabled">Receitas premium</li>
+          </ul>
+          <a href="#download" class="btn btn-outline">Comece Grátis</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card featured fade-in">
+          <div class="pricing-badge">Mais Popular</div>
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <div class="pricing-price">Pro <span>/ mês</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>Todas as receitas liberadas</li>
+            <li>5 SmartPlans por dia</li>
+            <li>Todos os desafios e conquistas</li>
+            <li>Compartilhamento ilimitado</li>
+            <li>Sem anúncios</li>
+            <li>Receitas premium exclusivas</li>
+            <li>Suporte prioritário</li>
+            <li>1 semana grátis para experimentar</li>
+          </ul>
+          <a href="#download" class="btn btn-accent">Assinar Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <h2 class="section-title fade-in">Perguntas Frequentes</h2>
+      <p class="section-subtitle fade-in">
+        Tire suas dúvidas sobre o Comboa.
+      </p>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            O que é o Comboa?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              O Comboa é um aplicativo de refeições fit que funciona como seu companheiro inteligente.
+              Ele oferece receitas personalizadas, desafios semanais de alimentação e uma IA (ComboaIA)
+              que monta planos alimentares sob medida para seus objetivos — seja perda de peso,
+              ganho de massa, mais disposição ou saúde geral.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Como funciona a ComboaIA?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              A ComboaIA analisa seu objetivo (perda de peso, ganho de massa, disposição ou saúde geral),
+              suas restrições alimentares e preferências para gerar SmartPlans — planos de refeições
+              personalizados com 6 refeições diárias balanceadas. No plano Premium, você pode receber
+              até 5 SmartPlans diferentes por dia.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Quais restrições alimentares são suportadas?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              O Comboa suporta as principais restrições alimentares: sem lactose, sem glúten,
+              vegano e vegetariano. A ComboaIA leva em conta essas restrições na hora de
+              gerar seus SmartPlans, garantindo receitas seguras e adequadas para você.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Qual a diferença entre Free e Premium?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              No plano Free, você tem acesso básico a receitas, a ComboaIA com limitações
+              e anúncios. Já no Premium, você desbloqueia todas as receitas, recebe até 5
+              SmartPlans por dia, acesso a todos os desafios e conquistas, compartilhamento
+              ilimitado com amigos e uma experiência sem anúncios.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Como funcionam os desafios semanais?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Toda semana o Comboa propõe novos desafios alimentares para estimular hábitos
+              saudáveis. Ao completar desafios, você desbloqueia conquistas em 6 categorias
+              diferentes — são mais de 40 conquistas para colecionar! É uma forma divertida
+              de manter a motivação e acompanhar seu progresso.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            O Comboa substitui um nutricionista?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Não. O Comboa é um aplicativo de receitas, não de nutrição. Nosso algoritmo sugere
+              receitas e pode cometer erros. Para dietas elaboradas e orientação nutricional adequada,
+              consulte um nutricionista ou médico especialista.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            O Comboa está disponível para iOS e Android?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim! O Comboa está disponível gratuitamente na App Store (iOS) e na Google Play (Android).
+              Basta procurar por "Comboa" na loja do seu dispositivo.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            Posso cancelar o Premium a qualquer momento?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim. A assinatura Premium pode ser cancelada a qualquer momento através da
+              App Store ou Google Play. Você continuará com acesso Premium até o fim do
+              período já pago.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/comboa_logo.png" alt="Comboa">
+          <p>Seu companheiro inteligente para refeições fit. Receitas personalizadas, desafios semanais e IA que monta seu plano alimentar.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#comboaia">ComboaIA</a>
+          <a href="#precos">Preços</a>
+          <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="https://graycatcorp.com/termos_uso_comboa_br.html" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
+          <a href="https://graycatcorp.com/privacy_policy_pdf.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+          <a href="https://graycatcorp.com/eula_brasil_pdf.html" target="_blank" rel="noopener noreferrer">EULA</a>
+          <a href="mailto:suportebr@graycatcorp.com">Contato</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Baixe o App</h4>
+          <a href="https://apps.apple.com/br/app/comboa/id6751010781" target="_blank" rel="noopener noreferrer">App Store (iOS)</a>
+          <a href="https://play.google.com/store/apps/details?id=br.com.graycat.flutter_g_comboa" target="_blank" rel="noopener noreferrer">Google Play (Android)</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Comboa. Todos os direitos reservados.</span>
+        <span>Feito por GrayCat Corp</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
